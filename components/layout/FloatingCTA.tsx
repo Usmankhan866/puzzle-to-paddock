@@ -31,7 +31,7 @@ export const FloatingCTA = (): React.JSX.Element => {
         className="bg-[#064232] hover:bg-[#064232]/90 text-white rounded-full p-3 sm:px-4 sm:py-3 shadow-lg hover:shadow-xl transition-all min-w-[48px] min-h-[48px] flex items-center justify-center"
         asChild
       >
-        <Link href="/contact" aria-label="Book a call" className="flex items-center justify-center">
+        <Link href="https://calendly.com/clo-puzzletopaddock" aria-label="Book a call" className="flex items-center justify-center">
           <Calendar size={20} />
           <span className="hidden md:inline ml-2 font-['Poppins']">Book Call</span>
         </Link>
@@ -39,7 +39,7 @@ export const FloatingCTA = (): React.JSX.Element => {
 
       {/* Click to Call */}
       <Button
-        className="bg-[#F5BABB] hover:bg-[#25D366]/90 text-white rounded-full p-3 sm:px-4 sm:py-3 shadow-lg hover:shadow-xl transition-all min-w-[48px] min-h-[48px] flex items-center justify-center"
+        className="bg-[#F5BABB] hover:bg-[#F5BABB]/90 text-white rounded-full p-3 sm:px-4 sm:py-3 shadow-lg hover:shadow-xl transition-all min-w-[48px] min-h-[48px] flex items-center justify-center"
         asChild
       >
         <a href="tel:+1234567890" aria-label="Call us" className="flex items-center justify-center">

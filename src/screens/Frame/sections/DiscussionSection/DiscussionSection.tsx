@@ -53,13 +53,32 @@ export const DiscussionSection = () => {
             {/* Booking buttons */}
             <div className="pl-4 sm:pl-5 lg:pl-6 xl:pl-7 space-y-2">
               <div className="flex flex-col gap-2">
-                <Button className="bg-[#568f87] hover:bg-[#4a7a72] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 font-['Poppins']">
+                {/* Nanny Introduction Call */}
+                <Button
+                  onClick={() =>
+                    window.open(
+                      "https://calendly.com/clo-puzzletopaddock/nanny-introduction-call?back=1&month=2025-09",
+                      "_blank"
+                    )
+                  }
+                  className="bg-[#568f87] hover:bg-[#4a7a72] text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 font-['Poppins']"
+                >
                   <Calendar className="w-4 h-4 mr-2" />
-                  Book Family Consultation
+                  Nanny Introduction Call
                 </Button>
-                <Button className="bg-[#F5BABB] hover:bg-[#f0a7a9] text-[#568f87] px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 font-['Poppins']">
+
+                {/* NDIS Carer or Family Consultation */}
+                <Button
+                  onClick={() =>
+                    window.open(
+                      "https://calendly.com/clo-puzzletopaddock/ndis-carer-or-family?back=1&month=2025-09",
+                      "_blank"
+                    )
+                  }
+                  className="bg-[#F5BABB] hover:bg-[#f0a7a9] text-[#568f87] px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 font-['Poppins']"
+                >
                   <Calendar className="w-4 h-4 mr-2" />
-                  Professional Consultation
+                  NDIS Carer or Family Consultation
                 </Button>
               </div>
               
@@ -87,7 +106,7 @@ export const DiscussionSection = () => {
             {/* Decorative elements */}
             <div className="absolute w-8 h-8 sm:w-12 sm:h-12 lg:w-16 lg:h-16 xl:w-18 xl:h-18 -top-1 sm:-top-2 lg:-top-2 xl:-top-3 -left-1 sm:-left-2 lg:-left-2 xl:-left-3 bg-[#568f87] rounded-2xl lg:rounded-[16px]" />
             <div className="absolute w-16 h-16 sm:w-18 sm:h-18 lg:w-24 lg:h-24 xl:w-28 xl:h-28 -bottom-2 sm:-bottom-3 lg:-bottom-4 xl:-bottom-5 -right-2 sm:-right-3 lg:-right-4 xl:-right-5 bg-[#f5babb] rounded-2xl lg:rounded-[16px]" />
-            <div className="absolute w-2 h-2 sm:w-3 sm:h-3 lg:w-4 lg:h-4 xl:w-5 xl:h-5 top-1/3 -left-1 sm:-left-1 lg:-left-2 xl:-left-2 bg-[#f5babb] rounded-full" />
+            <div className="absolute w-2 h-2 sm:w-3 sm:h-3 lg:w-4 lg:h-4 xl:w-5 top-1/3 -left-1 sm:-left-1 lg:-left-2 xl:-left-2 bg-[#f5babb] rounded-full" />
 
             {/* Main image */}
             <div className="relative z-10">
